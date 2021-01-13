@@ -22,38 +22,20 @@ if ( sizeof($request_array['events']) > 0 )
         $reply_message = '';
         $reply_token = $event['replyToken'];
 
- //       $text = $event['message']['text'];
- //      $data = [
- //           'replyToken' => $reply_token,
- //           // 'messages' => [['type' => 'text', 'text' => json_encode($request_array) ]]  Debug Detail message
- //           'messages' => [['type' => 'text', 'text' => $text ]]
- //       ];
- //       $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
-//
-//       $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
-//
-//        echo "Result: ".$send_result."\r\n";
-//    }
-//}
-  if ( $event['type'] == 'message' ) 
-  {
-  if( $event['message']['type'] == 'text' ) {
-if( $event['message']['text'] == 'บอทจ๋า' ) {
-$reply_message = 'บอทจ๋าอยู่นี่ มีอะไรให้บอทจ๋ารับใช้เหรอ'; // ข้อความที่จะให้บอทตอบกลับ
-}
-}
-   //$reply_message = iconv("tis-620","utf-8",$reply_message);
-   $data = [
-    'replyToken' => $reply_token,
-    'messages' => [['type' => 'text', 'text' => $reply_message]]
-   ];
-   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+        $text = $event['message']['text'];
+       $data = [
+            'replyToken' => $reply_token,
+            // 'messages' => [['type' => 'text', 'text' => json_encode($request_array) ]]  Debug Detail message
+           'messages' => [['type' => 'text', 'text' => $text ]]
+       ];
+       $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
 
-   $send_result = send_reply_message($API_URL, $POST_HEADER, $post_body);
-   echo "Result: ".$send_result."\r\n";
-  }
- }
+      $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
+
+        echo "Result: ".$send_result."\r\n";
+    }
 }
+ 
 
 echo "OK";
 
