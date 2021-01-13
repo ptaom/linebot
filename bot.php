@@ -38,7 +38,7 @@ else if( $event['message']['text'] == 'ทดสอบ' ) {
 $text = 'สอบใหญ่ หรือ สอบย่อย';
     }
 else if( $event['message']['text'] == 'เทส' ) {
-$text = 'เทสสสส';
+$text = 'https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing';
     }   
 ////////////////////////////////////////
 else
