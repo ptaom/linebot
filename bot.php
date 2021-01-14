@@ -44,7 +44,7 @@ else if( $event['message']['text'] == 'IT REQUEST' ) {
 $text = 'T:\TMTWANGNOI\Information Technology\Documents\1. DocumentS List\S-FM-IT-02  R03 IT SERVICE FORM.xls';
     }
 else if( $event['message']['text'] == 'แบบฟอร์มขอใช้ USB' ) {
-$text = '<a href="T:\TMTWANGNOI\Information Technology\Documents\1. DocumentS List\REQUEST FORM PERIPHERAI.pdf">REQUEST</a>';
+$text = 'file:///T:\TMTWANGNOI\Information Technology\Documents\1. DocumentS List\REQUEST FORM PERIPHERAI.pdf';
     }
 else if( $event['message']['text'] == 'เบอร์โทร IT' ) {
 $text = '
