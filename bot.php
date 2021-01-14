@@ -32,17 +32,50 @@ if( $event['message']['text'] == 'บอทจ๋า' ) {
 $text = 'บอทจ๋าอยู่นี่ มีอะไรให้บอทจ๋ารับใช้เหรอ';
 }
 else if( $event['message']['text'] == 'สวัสดี' ) {
-$text = 'เกิดมาเพิ่งรู้ว่าหวัดดี';
+$text = 'ซาหวาดดีคร๊าบบท่านสมาชิกชมรม....';
     }
 else if( $event['message']['text'] == 'ทดสอบ' ) {
 $text = 'สอบใหญ่ หรือ สอบย่อย';
     }
 else if( $event['message']['text'] == 'เทส' ) {
 $text = 'https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing';
-    }   
+    }
+else if( $event['message']['text'] == 'IT REQUEST' ) {
+$text = 'T:\TMTWANGNOI\Information Technology\Documents\1. DocumentS List\S-FM-IT-02  R03 IT SERVICE FORM.xls';
+    }
+else if( $event['message']['text'] == 'แบบฟอร์มขอใช้ USB' ) {
+$text = 'T:\TMTWANGNOI\Information Technology\Documents\1. DocumentS List\REQUEST FORM PERIPHERAI.pdf';
+    }
+else if( $event['message']['text'] == 'เบอร์โทร IT' ) {
+$text = '
+4280 = คุณปราโมทย์ (พี่โมทย์)
+4281 = คุณถนัดกิจ (น้องนัด)
+4282 = คุณนพดล (พี่นัด)
+4283 = คุณปริญญารัตน์ (น้องฟิล์ม)
+4284 = คุณเฉลิมศักดิ์ (พี่ซีเค)
+4285 = คุณเอนกแสงนาค (น้องไอ๊ซ์)
+';
+    }
+else if( $event['message']['text'] == 'Email IT' ) {
+$text = '
+pramote@TMT.COM = คุณปราโมทย์ (พี่โมทย์)
+tanadkij@TMT.COM = คุณถนัดกิจ (น้องนัด)
+noppadon@TMT.COM = คุณนพดล (พี่นัด)
+parinyarat@TMT.COM = คุณปริญญารัตน์ (น้องฟิล์ม)
+chalermsak@TMT.COM = คุณเฉลิมศักดิ์ (พี่ซีเค)
+anake@TMT.COM = คุณเอนกแสงนาค (น้องไอ๊ซ์)
+';
+    }
 ////////////////////////////////////////
 else
-$text = 'ประวิท : ไม่รู้! ไม่รู้! ไม่รู้!';       
+$text = 'ดิฉันขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง
+ดำฉันขอแนะนำ อย่าเช่น
+- IT REQUEST
+- แบบฟอร์มขอใช้ USB
+- เบอร์โทร IT
+- Email IT
+';
+    
 }
         
         
