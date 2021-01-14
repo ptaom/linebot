@@ -40,11 +40,11 @@ $text = 'สอบใหญ่ หรือ สอบย่อย';
 else if( $event['message']['text'] == 'เทส' ) {
 $text = 'https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing';
     }
-else if( $event['message']['text'] == 'IT REQUEST' ) {
-$text = 'T:\TMTWANGNOI\Information Technology\Documents\1. DocumentS List\S-FM-IT-02  R03 IT SERVICE FORM.xls';
+else if( $event['message']['text'] == 'คู่มือการติดตั้งโปรแกรม Cisco VPN' ) {
+$text = 'https://drive.google.com/file/d/1sZZkl78nfFnL3xQg-RMtLRNkZT0q7xB5/view?usp=sharing';
     }
-else if( $event['message']['text'] == 'แบบฟอร์มขอใช้ USB' ) {
-$text = 'file:///T:\TMTWANGNOI\Information Technology\Documents\1. DocumentS List\REQUEST FORM PERIPHERAI.pdf';
+else if( $event['message']['text'] == 'วิธีเข้าใช้งาน Web Mail TMT Steel จากภายนอก' ) {
+$text = 'https://drive.google.com/file/d/1udeYpsVJ_wBF-oV6TcOaynkPlh7xc3Uh/view?usp=sharing';
     }
 else if( $event['message']['text'] == 'เบอร์โทร IT' ) {
 $text = '
@@ -70,7 +70,7 @@ anake@TMT.COM = คุณเอนกแสงนาค (น้องไอ๊�
 else
 $text = 'ดิฉันขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง
 ดำฉันขอแนะนำ อย่าเช่น
-- IT REQUEST
+- คู่มือการติดตั้งโปรแกรม Cisco VPN
 - แบบฟอร์มขอใช้ USB
 - เบอร์โทร IT
 - Email IT
