@@ -122,11 +122,7 @@ $text = 'ดิฉันขออภัยที่ยังไม่ค่อ�
 ';
 $data = [
 'replyToken' => $reply_token,
-'messages' = "type": "image",
-     "originalContentUrl": "https://linefriends.com/img/bangolufsen/img_og.jpg",
-     "previewImageUrl": "https://linefriends.com/img/bangolufsen/img_og.jpg"
-
-];  
+'messages' => [['type' => 'text', 'text' => $text ]]  
 }
         
         
