@@ -103,8 +103,8 @@ $data = [
     }
     
 else if( $event['message']['text'] == 'ขอดูภาพ' ) {
-$text = 'https://sv1.picz.in.th/images/2021/01/15/lqZB0R.png';
-$text2 = 'https://sv1.picz.in.th/images/2021/01/15/lqZB0R.png';
+$text = 'https://linefriends.com/img/bangolufsen/img_og.jpg';
+$text2 = 'https://linefriends.com/img/bangolufsen/img_og.jpg';
 $data = ['replyToken' => $reply_token,'messages' => [['type' => 'image', 'originalContentUrl' => $text ,'previewImageUrl' => $text2 ]]
         ];
     }
