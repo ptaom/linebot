@@ -103,10 +103,8 @@ $data = [
     }
     
 else if( $event['message']['text'] == 'ขอดูภาพ' ) {
-$text = 'https://linefriends.com/img/bangolufsen/img_og.jpg';
-$text2 = 'https://linefriends.com/img/bangolufsen/img_og.jpg';
 $data = ['replyToken' => $reply_token,
-         'messages' => [['type' => 'image', 'originalContentUrl' => $text ,'previewImageUrl' => $text2 ]]
+         'messages' => [['type' => 'sticker', 'packageId' => '11537' ,'stickerId' => '52002744' ]]
         ];
     }
 
