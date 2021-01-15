@@ -102,7 +102,7 @@ $data = [
 ];
     }
     
-else if( $event['message']['text'] == 'Email IT' ) {
+else if( $event['message']['text'] == 'ขอดูภาพ' ) {
 $text = 'https://www.picz.in.th/image/lqZB0R';
 $text2 = '';
 $data = ['replyToken' => $reply_token,'messages' => [['type' => 'image', 'originalContentUrl' => $text ,'previewImageUrl' => $text ]]
@@ -117,6 +117,7 @@ $text = 'ดิฉันขออภัยที่ยังไม่ค่อ�
 - แบบฟอร์มขอใช้ USB
 - เบอร์โทร IT
 - Email IT
+- ขอดูภาพ
 ';
 $data = [
 'replyToken' => $reply_token,
