@@ -104,8 +104,8 @@ $data = [
     
 else if( $event['message']['text'] == 'ขอดูภาพ' ) {
 $text = 'https://www.picz.in.th/image/lqZB0R';
-$text2 = '';
-$data = ['replyToken' => $reply_token,'messages' => [['type' => 'image', 'originalContentUrl' => $text ,'previewImageUrl' => $text ]]
+$text2 = 'https://sv1.picz.in.th/images/2021/01/15/lqZB0R.png';
+$data = ['replyToken' => $reply_token,'messages' => [['type' => 'image', 'originalContentUrl' => $text ,'previewImageUrl' => $text2 ]]
         ];
     }
 
