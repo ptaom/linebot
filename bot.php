@@ -101,6 +101,13 @@ $data = [
 'messages' => [['type' => 'text', 'text' => $text ]]
 ];
     }
+    
+else if( $event['message']['text'] == 'Email IT' ) {
+$text = 'https://www.picz.in.th/image/lqZB0R';
+$text2 = '';
+$data = ['replyToken' => $reply_token,'messages' => [['type' => 'image', 'originalContentUrl' => $text ,'previewImageUrl' => $text ]]
+        ];
+    }
 
 ////////////////////////////////////////
 else
