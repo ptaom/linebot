@@ -105,7 +105,8 @@ $data = [
 else if( $event['message']['text'] == 'ขอดูภาพ' ) {
 $text = 'https://linefriends.com/img/bangolufsen/img_og.jpg';
 $text2 = 'https://linefriends.com/img/bangolufsen/img_og.jpg';
-$data = ['replyToken' => $reply_token,'messages' => [['type' => 'image', 'originalContentUrl' => $text ,'previewImageUrl' => $text2 ]]
+$data = ['replyToken' => $reply_token,
+         'messages' => [['type' => 'image', 'originalContentUrl' => $text ,'previewImageUrl' => $text2 ]]
         ];
     }
 
@@ -121,7 +122,10 @@ $text = 'ดิฉันขออภัยที่ยังไม่ค่อ�
 ';
 $data = [
 'replyToken' => $reply_token,
-'messages' => [['type' => 'text', 'text' => $text ]]
+'messages' = "type": "image",
+     "originalContentUrl": "https://linefriends.com/img/bangolufsen/img_og.jpg",
+     "previewImageUrl": "https://linefriends.com/img/bangolufsen/img_og.jpg"
+
 ];  
 }
         
