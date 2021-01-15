@@ -122,7 +122,8 @@ $text = 'ดิฉันขออภัยที่ยังไม่ค่อ�
 ';
 $data = [
 'replyToken' => $reply_token,
-'messages' => [['type' => 'text', 'text' => $text ]]  
+'messages' => [['type' => 'text', 'text' => $text ]]
+         ];
 }
         
         
