@@ -24,8 +24,8 @@ if ( sizeof($request_array['events']) > 0 )
         
 if( $event['message']['type'] == 'text' ) {
 /////////////////////////////////////////
-if( $event['message']['text'] == 'บอทจ๋า' ) {
-$text = 'บอทจ๋าอยู่นี่ มีอะไรให้บอทจ๋ารับใช้เหรอ';
+if( $event['message']['text'] == 'บอท' ) {
+$text = 'บอทอยู่นี่ มีอะไรให้บอทรับใช้เหรอ';
 $data = [
 'replyToken' => $reply_token,
 'messages' => [['type' => 'text', 'text' => $text ]]
@@ -33,7 +33,7 @@ $data = [
     }
 
 else if( $event['message']['text'] == 'สวัสดี' ) {
-$text = 'ซาหวาดดีคร๊าบบท่านสมาชิกชมรม....';
+$text = 'ซาหวาดดีคร๊าบบบบ';
 $data = [
 'replyToken' => $reply_token,
 'messages' => [['type' => 'text', 'text' => $text ]]
@@ -41,7 +41,7 @@ $data = [
     }
 
 else if( $event['message']['text'] == 'ทดสอบ' ) {
-$text = 'สอบใหญ่ หรือ สอบย่อย';
+$text = 'เอาจริงเลยก็ได้นะ';
 $data = [
 'replyToken' => $reply_token,
 'messages' => [['type' => 'text', 'text' => $text ]]
@@ -79,7 +79,7 @@ $text = '
 4282 = คุณนพดล (พี่นัด)
 4283 = คุณปริญญารัตน์ (น้องฟิล์ม)
 4284 = คุณเฉลิมศักดิ์ (พี่ซีเค)
-4285 = คุณเอนกแสงนาค (น้องไอ๊ซ์)
+4285 = คุณเอนกแสงนาค (ไอ๊ซ์)
 ';
 $data = [
 'replyToken' => $reply_token,
@@ -94,7 +94,7 @@ tanadkij@TMT.COM = คุณถนัดกิจ (น้องนัด)
 noppadon@TMT.COM = คุณนพดล (พี่นัด)
 parinyarat@TMT.COM = คุณปริญญารัตน์ (น้องฟิล์ม)
 chalermsak@TMT.COM = คุณเฉลิมศักดิ์ (พี่ซีเค)
-anake@TMT.COM = คุณเอนกแสงนาค (น้องไอ๊ซ์)
+anake@TMT.COM = คุณเอนกแสงนาค (ไอ๊ซ์)
 ';
 $data = [
 'replyToken' => $reply_token,
@@ -110,13 +110,13 @@ $data = ['replyToken' => $reply_token,
 
 ////////////////////////////////////////
 else
-$text = 'ดิฉันขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง
-ดำฉันขอแนะนำ อย่าเช่น
+$text = 'ดิฉันขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียงดำฉันขอแนะนำ อย่าเช่น
+
+
 - คู่มือการติดตั้งโปรแกรม Cisco VPN
 - แบบฟอร์มขอใช้ USB
 - เบอร์โทร IT
 - Email IT
-- ขอดูภาพ
 ';
 $data = [
 'replyToken' => $reply_token,
