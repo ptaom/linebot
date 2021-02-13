@@ -33,22 +33,22 @@ $data = [
     }
 
 else if( $event['message']['text'] == 'สวัสดี' ) {
-$text = 'ซาหวาดดีคร๊าบบบบ';
+$text = 'สวัสดีค่ะ';
 $data = [
 'replyToken' => $reply_token,
 'messages' => [['type' => 'text', 'text' => $text ]]
 ];
     }
 
-else if( $event['message']['text'] == 'ทดสอบ' ) {
-$text = 'เอาจริงเลยก็ได้นะ';
+else if( $event['message']['text'] == 'สอบถาม' ) {
+$text = 'อยากทราบข้อมูลอะไรคะ';
 $data = [
 'replyToken' => $reply_token,
 'messages' => [['type' => 'text', 'text' => $text ]]
 ];
     }
 
-else if( $event['message']['text'] == 'เทส' ) {
+else if( $event['message']['text'] == 'ข้อมูลการอบรม' ) {
 $text = 'https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing';
 $data = [
 'replyToken' => $reply_token,
