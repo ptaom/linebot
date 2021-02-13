@@ -49,8 +49,9 @@ $data = [
     }
 
 else if( $event['message']['text'] == 'ข้อมูลการอบรม' ) {
-$text = 'ท่านสามรถดูข้อมูลการอบรมได้จากลิงค์ด้านล่างนี้';
-$text2 = 'https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing';
+$text = 'ท่านสามรถดูข้อมูลการอบรมได้จากลิงค์ด้านล่างนี้
+https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing
+';
 $data = [
 'replyToken' => $reply_token,
 'messages' => [['type' => 'text', 'text' => $text , $text2 ]]
