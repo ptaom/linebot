@@ -33,7 +33,7 @@ $data = [
     }
 
 else if( $event['message']['text'] == 'สวัสดี' ) {
-$text = 'สวัสดีค่ะ';
+$text = 'สวัสดีค่ะ :)';
 $data = [
 'replyToken' => $reply_token,
 'messages' => [['type' => 'text', 'text' => $text ]]
@@ -41,7 +41,7 @@ $data = [
     }
 
 else if( $event['message']['text'] == 'สอบถาม' ) {
-$text = 'อยากทราบข้อมูลอะไรคะ';
+$text = 'อยากทราบข้อมูลอะไรคะ?';
 $data = [
 'replyToken' => $reply_token,
 'messages' => [['type' => 'text', 'text' => $text ]]
@@ -49,6 +49,7 @@ $data = [
     }
 
 else if( $event['message']['text'] == 'ข้อมูลการอบรม' ) {
+$text = 'ท่านสามรถดูข้อมูลการอบรมได้จากลิงค์ด้านล่างนี้';
 $text = 'https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing';
 $data = [
 'replyToken' => $reply_token,
