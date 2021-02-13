@@ -104,7 +104,7 @@ $data = [
     
 else if( $event['message']['text'] == 'ขอดูภาพ' ) {
 $data = ['replyToken' => $reply_token,
-         'messages' => [['type' => 'sticker', 'sticker' => 'packageId' => '1' ,'stickerId' => '1' ]]
+         'messages' => [['type' => 'sticker','packageId' => '1' ,'stickerId' => '1' ]]
         ];
     }
 
