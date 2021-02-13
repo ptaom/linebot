@@ -49,7 +49,7 @@ $data = [
     }
 
 else if( $event['message']['text'] == 'ข้อมูลการอบรม' ) {
-$text = 'ท่านสามรถดูข้อมูลการอบรมได้จากลิงค์ด้านล่างนี้
+$text = 'ท่านสามารถดูหลักสูตรการอบรมได้จากลิงค์ด้านล่างนี้
 https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing';
 $data = [
 'replyToken' => $reply_token,
@@ -57,7 +57,7 @@ $data = [
 ];
     }
 
-else if( $event['message']['text'] == 'คู่มือการติดตั้งโปรแกรม Cisco VPN' ) {
+else if( $event['message']['text'] == 'วันที่' ) {
 $text = 'https://drive.google.com/file/d/1sZZkl78nfFnL3xQg-RMtLRNkZT0q7xB5/view?usp=sharing';
 $data = [
 'replyToken' => $reply_token,
@@ -73,7 +73,7 @@ $data = [
 ];
     }
 
-else if( $event['message']['text'] == 'เบอร์โทร IT' ) {
+else if( $event['message']['text'] == 'เบอร์โทรเจ้าหน้าที่' ) {
 $text = '
 4280 = คุณปราโมทย์ (พี่โมทย์)
 4281 = คุณถนัดกิจ (น้องนัด)
@@ -102,13 +102,7 @@ $data = [
 'messages' => [['type' => 'text', 'text' => $text ]]
 ];
     }
-    
-else if( $event['message']['text'] == 'ขอดูภาพ' ) {
-$text = ['packageId' => '1' ,'stickerId' => '1'];    
-$data = ['replyToken' => $reply_token,
-         'messages' => [['type' => 'sticker', 'sticker' => $text ]]
-        ];
-    }
+
 
 ////////////////////////////////////////
 else
