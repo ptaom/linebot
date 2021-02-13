@@ -50,8 +50,7 @@ $data = [
 
 else if( $event['message']['text'] == 'ข้อมูลการอบรม' ) {
 $text = 'ท่านสามรถดูข้อมูลการอบรมได้จากลิงค์ด้านล่างนี้
-https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing
-';
+https://drive.google.com/file/d/197qJTqLWqK9xsR7sV1ZzEBygtep2PDeN/view?usp=sharing';
 $data = [
 'replyToken' => $reply_token,
 'messages' => [['type' => 'text', 'text' => $text , $text2 ]]
@@ -115,11 +114,10 @@ $data = ['replyToken' => $reply_token,
 else
 $text = 'ดิฉันขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียงดำฉันขอแนะนำ อย่าเช่น
 
-
-- คู่มือการติดตั้งโปรแกรม Cisco VPN
-- แบบฟอร์มขอใช้ USB
-- เบอร์โทร IT
-- Email IT
+- ข้อมูลการอบรม
+- วันที่อบรม
+- สถานที่อบรม
+- เบอร์โทรเจ้าหน้าที่
 ';
 $data = [
 'replyToken' => $reply_token,
